@@ -52,7 +52,8 @@ async function handler(ctx) {
             description: `
                 ${weekly_name} ${item.title}<br>
                 ${item.rcmd_reason}<br>
-                ${disableEmbed ? '' : utils.iframe(item.param)}<img src="${item.cover}">
+                ${disableEmbed ? '' : utils.iframe(item.param)}<img src="${item.cover}"><br>
+                >>open
             `,
             link: weekly_number > 60 && item.bvid ? `https://www.bilibili.com/video/${item.bvid}` : `https://www.bilibili.com/video/av${item.param}`,
         })),
