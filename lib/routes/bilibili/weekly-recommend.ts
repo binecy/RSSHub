@@ -44,7 +44,7 @@ async function handler(ctx) {
 
     return {
         title: 'B站每周必看',
-        link: 'https://www.bilibili.com/h5/weekly-recommend',
+        link: 'https://www.bilibili.com/blackboard/html5mobileplayer.html?aid=${item.param}&hasMuteButton=0',
         description: 'B站每周必看',
         item: data.map((item) => ({
             title: item.title,
@@ -54,7 +54,7 @@ async function handler(ctx) {
                 ${item.rcmd_reason}<br>
                 ${disableEmbed ? '' : utils.iframe(item.param)}<img src="${item.cover}"><br>
                 >>open
-                <button id="test1" onclick="document.getElementsByClassName('mplayer-icon-widescreen')[0].click();">点我</button>
+                <button id="test1" onclick="document.getElementsByClassName('mplayer-icon-widescreen')[0].click();">点我2</button>
             `,
             link: weekly_number > 60 && item.bvid ? `https://www.bilibili.com/video/${item.bvid}` : `https://www.bilibili.com/video/av${item.param}`,
         })),
