@@ -5,7 +5,7 @@ import CryptoJS from 'crypto-js';
 function iframe(aid: any, page?: any, bvid?: any) {
     return `<iframe src="https://www.bilibili.com/blackboard/html5mobileplayer.html?${bvid ? `bvid=${bvid}` : `aid=${aid}`}${
         page ? `&page=${page}` : ''
-    }&high_quality=1&autoplay=0"   style="transform: rotate(90deg); transform-origin: 50% 50%;" width="650" height="477" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>`;
+    }&high_quality=1&autoplay=0"   style="transform: rotate(90deg); transform-origin: 50% 50%;" width="477" height="650" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>`;
 }
 
 // a
