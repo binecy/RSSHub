@@ -56,7 +56,7 @@ async function handler(ctx) {
                 >>open
                 <button id="test1" onclick="document.getElementsByClassName('mplayer-icon-widescreen')[0].click();">点我3</button>
             `,
-            link: 'https://www.bilibili.com/blackboard/html5mobileplayer.html?aid=${item.param}&hasMuteButton=0',
+            link: `https://www.bilibili.com/blackboard/html5mobileplayer.html?aid=${item.param}&hasMuteButton=0`,
         })),
     };
 }
