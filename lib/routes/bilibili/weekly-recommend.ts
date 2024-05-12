@@ -52,9 +52,7 @@ async function handler(ctx) {
             description: `
                 ${weekly_name} ${item.title}<br>
                 ${item.rcmd_reason}<br>
-                ${disableEmbed ? '' : utils.iframe(item.param)}<img src="${item.cover}"><br>
-                >>open
-                <button id="test1" onclick="document.getElementsByClassName('mplayer-icon-widescreen')[0].click();">点我3</button>
+                ${disableEmbed ? '' : utils.iframe(item.param)}<img src="${item.cover}">
             `,
             link: `https://www.bilibili.com/blackboard/html5mobileplayer.html?aid=${item.param}&hasMuteButton=0`,
         })),
