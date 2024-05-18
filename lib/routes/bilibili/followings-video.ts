@@ -56,7 +56,7 @@ async function handler(ctx) {
     if (response.data.code === -6) {
         throw new ConfigNotFoundError('对应 uid 的 Bilibili 用户的 Cookie 已过期');
     }
-    const cards = response.data.data.cards;
+    const cards = response.data.cards;
 
     const out = cards.map((card) => {
         const card_data = JSON.parse(card.card);
